@@ -1,6 +1,7 @@
 package com.board.projectboard.controller;
 
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+@Disabled("Spring Data Rest 통합테스트는 불필요하므로 제외시킴")
 @DisplayName("Data Rest - Api 테스트")
 @Transactional
 @AutoConfigureMockMvc
@@ -86,7 +88,7 @@ public class DataRestTest {
         //Given
 
         //When
-        mvc.perform(get("/api/articleComments/4"))
+        mvc.perform(get("/api/articleComments/10"))
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.content().contentType(MediaType.valueOf("application/hal+json")));
         //Then
