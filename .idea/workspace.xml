@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec44e626-3a8f-45d9-b440-3da900158d4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/board/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/java/com/project/board/BoardApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/test/java/com/project/board/BoardApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/test/java/com/board/projectboard/repository/JpaRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/test/java/com/board/projectboard/repository/JpaRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +24,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="project-board" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -41,6 +38,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,7 +68,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/songjeonghyeon/Desktop/study/Project/board/java_project_board",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "21a0b134ab803e0fda52b04658bb3d83"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674917627986</updated>
       <workItem from="1674917629161" duration="157000" />
+      <workItem from="1676981235306" duration="19000" />
     </task>
     <servers />
   </component>
