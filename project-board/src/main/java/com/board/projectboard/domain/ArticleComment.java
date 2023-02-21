@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Getter
-@ToString
+@ToString(callSuper = true)
 @Table(indexes = {
         @Index(columnList = "content"),
         @Index(columnList = "createdAt"),
@@ -27,17 +27,19 @@ public class ArticleComment extends AuditingFields{
     private Long id;
 
     @Setter @ManyToOne(optional = false) private Article article;
+    @Setter @ManyToOne(optional = false) private UserAccount userAccount;
     @Setter @Column(nullable = false, length = 500) private String content;
 
     protected ArticleComment() {}
 
-    public ArticleComment(Article article, String content) {
+    public ArticleComment(Article article, UserAccount userAccount, String content) {
+        this.userAccount = userAccount;
         this.article = article;
         this.content = content;
     }
 
-    public static ArticleComment of(Article article, String content) {
-        return new ArticleComment(article, content);
+    public static ArticleComment of(Article article, UserAccount userAccount, String content) {
+        return new ArticleComment(article, userAccount, content);
     }
 
     @Override
