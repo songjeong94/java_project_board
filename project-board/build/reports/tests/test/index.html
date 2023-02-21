@@ -20,25 +20,25 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">8</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">8</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.356s</div>
+<div class="counter">0.144s</div>
 <p>duration</p>
 </div>
 </td>
@@ -61,50 +61,42 @@
 <a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Packages</a>
+<a href="#tab1">Ignored tests</a>
 </li>
 <li>
-<a href="#tab2">Classes</a>
+<a href="#tab2">Packages</a>
+</li>
+<li>
+<a href="#tab3">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <ul class="linkList">
 <li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenArticleId_whenDeletingArticle_thenDeletesArticle()">게시글의 ID를 입력하면, 게시글을 삭제한다</a>
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html">View 컨트롤러 - 게시글</a>.
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html#givenNoting_whenRequestingArticleView_thenReturnsArticleView()">[view][GET] 게시글 상세 페이지 - 정상 호출</a>
 </li>
 <li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenArticleId_whenSearchingArticle_thenReturnsArticle()">게시글을 조회하면, 게시글을 반환한다.</a>
-</li>
-<li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenArticleInfo_whenSavingArticle_thenSavesArticle()">게시글 정보를 입력하면, 게시글을 생성한다.</a>
-</li>
-<li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenModifiedArticleInfo_whenUpdatingArticle_thenUpdatesArticle()">게시글의 수정 정보를 입력하면, 게시글을 수정한다.</a>
-</li>
-<li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenNoSearchParameters_whenSearchingArticles_thenReturnsArticlePage()">검색어 없이 게시글을 검색하면, 게시글 페이지를 반환한다.</a>
-</li>
-<li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenNonexistentArticleId_whenSearchingArticle_thenThrowsException()">없는 게시글을 조회하면, 예외를 던진다.</a>
-</li>
-<li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenNonexistentArticleInfo_whenUpdatingArticle_thenLogsWarningAndDoesNothing()">없는 게시글의 수정 정보를 입력하면, 경고 로그를 찍고 아무 것도 하지 않는다.</a>
-</li>
-<li>
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">비즈니스 로직 - 게시글</a>.
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html#givenSearchParameters_whenSearchingArticles_thenReturnsArticlePage()">검색어와 함께 게시글을 검색하면, 게시글 페이지를 반환한다.</a>
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html">View 컨트롤러 - 게시글</a>.
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html#givenNoting_whenRequestingArticlesView_thenReturnsArticlesView()">[view][GET] 게시글 리스트 (게시판) 페이지 - 정상 호출</a>
 </li>
 </ul>
 </div>
 <div id="tab1" class="tab">
+<h2>Ignored tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html">View 컨트롤러 - 게시글</a>.
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html#givenNoting_whenRequestingArticleHashtagView_thenReturnsArticleHashtagView()">[view][GET] 게시글 해시태그 검색 페이지 - 정상 호출</a>
+</li>
+<li>
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html">View 컨트롤러 - 게시글</a>.
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html#givenNoting_whenRequestingArticleSearchView_thenReturnsArticleSearchView()">[view][GET] 게시글 검색 전용 페이지 - 정상 호출</a>
+</li>
+</ul>
+</div>
+<div id="tab2" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -120,18 +112,18 @@
 <tbody>
 <tr>
 <td class="failures">
-<a href="packages/com.board.projectboard.service.html">com.board.projectboard.service</a>
+<a href="packages/com.board.projectboard.controller.html">com.board.projectboard.controller</a>
 </td>
-<td>8</td>
-<td>8</td>
-<td>0</td>
-<td>0.356s</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>0.144s</td>
 <td class="failures">0%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -147,12 +139,12 @@
 <tbody>
 <tr>
 <td class="failures">
-<a href="classes/com.board.projectboard.service.ArticleServiceTest.html">com.board.projectboard.service.ArticleServiceTest</a>
+<a href="classes/com.board.projectboard.controller.ArticleControllerTest.html">com.board.projectboard.controller.ArticleControllerTest</a>
 </td>
-<td>8</td>
-<td>8</td>
-<td>0</td>
-<td>0.356s</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>0.144s</td>
 <td class="failures">0%</td>
 </tr>
 </tbody>
@@ -166,7 +158,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 2. 20. 오후 6:29:36</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 2. 22. 오전 12:06:32</p>
 </div>
 </div>
 </body>
