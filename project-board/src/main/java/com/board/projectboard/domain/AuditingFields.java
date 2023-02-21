@@ -18,8 +18,7 @@ import java.time.LocalDateTime;
 @ToString
 @EntityListeners(AuditingEntityListener.class)
 @MappedSuperclass
-//엔티티에서 상속을 해서 사용해야 하는 목적에 더 잘 맞게 abstract 키워드 추가
-public abstract class AuditingFields {
+public class AuditingFields {
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     @CreatedDate
