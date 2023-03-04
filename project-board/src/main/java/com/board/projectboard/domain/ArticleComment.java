@@ -2,13 +2,7 @@ package com.board.projectboard.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Getter
@@ -27,7 +21,7 @@ public class ArticleComment extends AuditingFields{
     private Long id;
 
     @Setter @ManyToOne(optional = false) private Article article;
-    @Setter @ManyToOne(optional = false) private UserAccount userAccount;
+    @Setter @ManyToOne(optional = false) @JoinColumn(name = "userId") private UserAccount userAccount;
     @Setter @Column(nullable = false, length = 500) private String content;
 
     protected ArticleComment() {}
