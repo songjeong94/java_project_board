@@ -19,24 +19,33 @@ import java.util.Set;
 })
 
 @Entity
-public class Article extends AuditingFields{
+public class Article extends AuditingFields {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Setter @ManyToOne(optional = false) @JoinColumn(name = "userId") private UserAccount userAccount;
-    @Setter @Column(nullable = false) private String title;   // 제목
-    @Setter @Column(nullable = false, length = 10000) private String content;  //본문
+    @Setter
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "userId")
+    private UserAccount userAccount;
+    @Setter
+    @Column(nullable = false)
+    private String title;   // 제목
+    @Setter
+    @Column(nullable = false, length = 10000)
+    private String content;  //본문
 
-    @Setter private String hashtag; // 해시태크
+    @Setter
+    private String hashtag; // 해시태크
 
     @ToString.Exclude
     @OrderBy("createdAt DESC")
     @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
     private final Set<ArticleComment> articleComments = new LinkedHashSet<>();
 
-    protected Article() {}
+    protected Article() {
+    }
 
     public Article(UserAccount userAccount, String title, String content, String hashtag) {
         this.userAccount = userAccount;
