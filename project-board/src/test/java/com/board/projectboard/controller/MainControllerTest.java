@@ -31,5 +31,4 @@ class MainControllerTest {
                 .andExpect(forwardedUrl("/articles"))
                 .andDo(MockMvcResultHandlers.print());
     }
-
 }

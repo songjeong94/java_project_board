@@ -24,7 +24,7 @@ public abstract class AuditingFields {
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     @CreatedDate
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt;    // 생서일시
+    private LocalDateTime createdAt;    // 생성일시
 
     @CreatedBy
     @Column(nullable = false, updatable = false, length = 100)
