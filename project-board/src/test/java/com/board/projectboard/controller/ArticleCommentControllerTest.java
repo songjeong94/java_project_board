@@ -1,12 +1,10 @@
 package com.board.projectboard.controller;
 
-import com.board.projectboard.config.SecurityConfig;
 import com.board.projectboard.config.TestSecurityConfig;
 import com.board.projectboard.dto.ArticleCommentDto;
 import com.board.projectboard.dto.request.ArticleCommentRequest;
 import com.board.projectboard.service.ArticleCommentService;
 import com.board.projectboard.util.FormDataEncoder;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +31,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class ArticleCommentControllerTest {
 
     private final MockMvc mvc;
+
     private final FormDataEncoder formDataEncoder;
 
     @MockBean private ArticleCommentService articleCommentService;
