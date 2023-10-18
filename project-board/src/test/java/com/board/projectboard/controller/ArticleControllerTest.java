@@ -1,6 +1,5 @@
 package com.board.projectboard.controller;
 
-import com.board.projectboard.config.SecurityConfig;
 import com.board.projectboard.config.TestSecurityConfig;
 import com.board.projectboard.domain.constant.FormStatus;
 import com.board.projectboard.domain.constant.SearchType;
@@ -37,7 +36,6 @@ import static org.mockito.BDDMockito.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -48,10 +46,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class ArticleControllerTest {
 
     private final MockMvc mvc;
+
     private final FormDataEncoder formDataEncoder;
 
     @MockBean private ArticleService articleService;
     @MockBean private PaginationService paginationService;
+
 
     public ArticleControllerTest(@Autowired MockMvc mvc,
                                  @Autowired FormDataEncoder formDataEncoder) {
